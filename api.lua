@@ -16,8 +16,8 @@ mtapi.mkresp = mtapi.mkresponse
 
 -- Checks if the mtapi response table is a good response
 mtapi.okresponse = function (resp)
-    if resp.success ~= nil and resp.success == true then
-        return true
+    if resp.success ~= nil then
+        return resp.success
     end
     return false
 end
@@ -26,4 +26,3 @@ end
 mtapi.okayresponse = mtapi.okresponse
 mtapi.okresp = mtapi.okresponse
 mtapi.okayresp = mtapi.okresponse
-mtapi.valid = mtapi.okresponse

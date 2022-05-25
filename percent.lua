@@ -1,5 +1,5 @@
 
-mtapi.getPercent = function (current, max)
+math.getPercent = function (current, max)
     if max == nil then
         max = 100.0
     end
